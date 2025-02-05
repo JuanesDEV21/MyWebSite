@@ -1,0 +1,16 @@
+{
+    "titulo": "Hola, soy <span>Juanes</span>", 
+    "subtitulo": "Yo soy <span></span>",
+    "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam distinctio illo ipsam aliquam cupiditate inventore quae dignissimos, voluptates, dolore voluptatem iusto odio? Autem sapiente mollitia necessitatibus nisi facere repellendus eveniet.",
+    "socialIcons": [
+        {  "clase": "bx bxl-linkedin", "url": "#"},
+        { "clase": "bx bxl-gitlab", "url": "#" },
+        { "clase": "bx bxl-instagram", "url": "#"},
+        {  "clase": "bx bxl-twitter", "url": "#" }         
+    ],
+    "buttons": [
+        {  "clase": "btn", "texto": "contacto", "url": "#contacto"},
+        {  "clase": "btn", "texto": "contratar", "url": "#contratar"}      
+    ],
+    "imagen": {"url": "../assest/Anon.png", "alt":"Mi foto"}
+}

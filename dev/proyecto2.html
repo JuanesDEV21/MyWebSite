@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stylepr2.css">
+  <link rel='stylesheet' href='https://www.flaticon.es/iconos-gratis/boton'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <title>Formulario</title>
+</head>
+
+<body>
+  <footer>
+    <strong>Edit Profile</strong>
+  </footer>
+
+  <div class="us">
+    <img src="../assest/PFP.png" class="as" alt="">
+    <div class="ic">
+      <a href=""><i class="fi fi-rs-pen-circle"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <form action="/procesadatos.php" method="post" enctype="application/x-www-form-urlencoded">
+
+      <div>
+        <div class="s1">
+          <label class="ed1" for="Nombre">First Name</label> <br>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="s1">
+          <label class="ed1" for="Apellido">Last Name</label> <br>
+          <input type="text" id="apellido" required>
+        </div>
+      </div>
+
+      <div>
+        <label class="ed1" for="Correo Electronico">Email</label> <br>
+        <input type="text" id="email" required>
+      </div>
+
+      <div>
+        <label class="ed1" for="numero tel.">Contacts Number</label> <br>
+        <input type="number" id="number" required>
+      </div>
+
+      <div>
+        <label for="Dirección">Address</label>
+        <input type="text" id="address" required>
+      </div>
+
+      <div>
+        <div class="s1">
+          <label for="ciudad">City</label>
+          <input type="text" id="ciudad" required>
+        </div>
+        <div class="s1">
+          <label for="Departamento">State</label>
+          <input type="text" id="departamento" required>
+        </div>
+      </div>
+
+      <div>
+        <div class="s1">
+          <label for="Codigo postal">Zip code</label>
+          <input type="text" id="zip" required>
+        </div>
+        <div class="s1">
+          <label for="Pais">Country</label>
+          <input type="text" id="country" required>
+        </div>
+      </div>
+
+      <div>
+        <label for="Contraseña">Password</label>
+        <input type="password" id="password" required>
+      </div>
+
+      <div class="send">
+        <button class="send1" type="submit"><img src="../assest/enviar-a.png" class="send1" alt=""></button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

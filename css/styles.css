@@ -1,0 +1,301 @@
+#particles-js{
+    height: 100vh;
+    width: 100;
+    position: fixed;
+    z-index: -1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color:#ffffff;
+    --maim-color:#7d12ff;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    font-weight: bold;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 4rem 12%4 rem;
+    background-color: var(--second-bg-color);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: centers;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+/*.navbar a{
+    font-size: 1.8rem;
+    color:var(--text-color);
+    margin-left: 4rem;
+    transition: 800;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: var(--main-color);
+    border-bottom: 3px solid var (--main-color);
+}*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alineación centrada de los elementos en la barra de navegación */
+    color:#7d12ff;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: transform 0.3s ease, color 0.3s ease, border-bottom 0.3s ease; /* Transición para tamaño, color y borde */
+    border-bottom: 3px solid transparent;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el cursor */
+}
+
+.navbar a span {
+    text-shadow: 0 0 25px var(--main-color); /* Sombra de texto para los enlaces */
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color: var(--maim-color);
+}
+/*.logo span{
+    color: var(--text-color);
+}*/
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-img img{
+    position: relative;
+    top: 3rem;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--maim-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--maim-color),
+                0 0 50px var(--maim-color),
+                0 0 100px var(--maim-color);
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.social-icons a{
+    display: inline-flex;justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--maim-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--maim-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: var(--text-color);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--maim-color);
+    background-color: var(--maim-color);
+}
+
+/*.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--maim-color);
+    box-shadow: 0 0 25px var(--maim-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}*/
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--maim-color);
+    box-shadow: 0 0 25px var(--maim-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones */
+    cursor: pointer;
+}
+
+/* Animación al pasar el cursor */
+.btn:hover {
+    transform: scale(1.1); /* Aumenta el tamaño a 110% */
+    box-shadow: 0 0 35px var(--maim-color); /* Aumenta la sombra */
+    color: #ffffff;
+}
+
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 288px;
+}
+
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: "Web Developer";
+    color: var(--maim-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+    to{border-left: 2px solid var(--maim-color);}
+}
+
+@keyframes words{
+    0%,
+    20%{content: "Frontend Designer";}
+    21%,
+    40%{content: "Web Developer";}
+    41%,
+    60%{content: "UX/UI Designer";}
+    61%,
+    80%{content: "Frontend Designer";}
+    81%,
+    100%{content: "UX/UI Designer";}
+}
+
+@keyframes typing{
+    10%, 
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{width: 0;} /*ocultar*/
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{width: calc(100% + 8px);} /*mostrar*/
+}

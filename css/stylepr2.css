@@ -1,0 +1,90 @@
+/*Proyecto 2*/
+footer{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    margin-left: 450px;
+}
+
+.us{
+    margin-right: 30px;
+    text-align: center;
+    margin-top: -20px;   
+}
+
+.as{    
+    height: 200px;
+    width: 200px;
+}
+
+.ic{
+    margin-left: 100px;
+    color: rgb(79, 79, 175);
+    margin-top: -40px;   
+    padding: 10px;
+    font-size: 30px;
+}
+
+.ic:hover{ 
+    color: blue;
+    padding: 5px 5px;
+    border-radius: 2px;
+}
+
+.ds{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin-bottom: 0px;
+}
+
+.container{
+    margin: auto;
+    width: 30%;
+    white-space: nowrap;  
+}
+
+label{
+    display: block; 
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid rgba(76, 190, 243, 0.686);
+    background-color: rgba(0, 255, 255, 0.055);
+    border-radius: 6px;
+    width: 100%;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.s1{
+    display: inline-block;
+    width: 48%;
+    padding: 15px;
+    margin-left: -15px;
+}
+
+.send1{
+    width: 90px;
+    height: 50px;
+    text-decoration: none;
+    padding: 1px 1px;
+    border:0px;
+    background-color: white;
+}
+
+.send{
+    margin-right: 20px;
+}
+
+.ed1{
+    margin-bottom: -11px;
+}
